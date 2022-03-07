@@ -1,0 +1,202 @@
+
+body{
+font-family: 'Comfortaa', cursive;
+}
+
+body{
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"main"
+	"footer";
+	grid-template-columns: 100%;
+	gris-template-rows: auto auto auto;
+}
+
+header{
+	grid-area: header;
+}
+
+main{
+	grid-area: main;
+}
+
+footer{
+	grid-area: footer;
+}
+
+a:hover{
+	color: hotpink;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+li{
+	font-size: 18px;
+	color: hotpink;
+	text-decoration: none;
+	padding: 20px;
+	list-style-type: none;
+}
+
+ul{
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+h1{
+	text-align: center;
+}
+
+
+
+header{
+	display: grid;
+	grid-template-areas:
+	"logo nav";
+	grid-template-columns: 40% 60%;
+	grid-template-rows: auto;
+}
+
+/*CSS INDEX*/
+.mainInicio{
+	display: grid;
+	grid-template-areas: 
+	"fraseInicio fraseInicio fraseInicio fraseInicio"
+	"foto1 foto1 foto1 foto1"
+	"productos productos productos productos"
+	"foto2 foto3 foto4 foto5";
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: auto auto auto auto;
+}
+
+.fraseInicio{
+	grid-area: fraseInicio;
+}
+.foto1{
+	grid-area: foto1;
+	width: 100%;
+}
+.productos{
+	grid-area: productos;
+	font-size: 20px;
+}
+.foto2{
+	grid-area: foto2;
+	width: 100%;
+}
+.foto3{
+	grid-area: foto3;
+	width: 100%;
+}
+.foto4{
+	grid-area: foto4;
+	width: 100%;
+}
+.foto5{
+	grid-area: foto5;
+	width: 100%;
+}
+
+footer{
+	display:  grid;
+	grid-template-areas: 
+	"footer--legales footer--redes";
+	grid-template-rows: 150px;
+}
+
+
+.footer--legales{
+	grid-area: footer--legales;
+}
+
+.footer--redes{
+	grid-area: footer--redes;
+}
+
+.footer--redes{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.footer--legales{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+svg{
+	padding: 05px;
+}
+
+
+/*INDEX HEADER MEDIA QUERIE MOBILE*/
+@media only screen and (max-width: 768px){
+	header{
+		display: grid;
+		grid-template-areas: 
+		"logo"
+		"nav";
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto;
+	}
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+}
+
+.nav{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+/*INDEX MAIN MEDIA QUERIE MOBILE*/
+@media only screen and (max-width: 768px){
+	.mainInicio{
+		display: grid;
+		grid-template-areas: 
+		"fraseInicio"
+		"foto1"
+		"productos"
+		"foto2" 
+		"foto3" 
+		"foto4" 
+		"foto5";
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto auto auto auto auto auto;
+		}
+}
+
+/*LOCALES HEADER MEDIA QUERIE MOBILE*/
+@media only screen and (max-width: 768px){
+	header{
+		display: grid;
+		grid-template-areas: 
+		"logo"
+		"nav";
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto;
+	}
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+}
+
+.nav{
+	display: flex;
+	justify-content: center;
+}
+
+
